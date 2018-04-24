@@ -1,0 +1,37 @@
+// some simple resets
+html,
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+// main app's container
+#app {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+
+  > div {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    > header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #b0c4de;
+      border-bottom: 2px solid #5391de;
+      color: #f8f8ff;
+      text-shadow: 5px 3px 8px #3F51B5;
+      padding: 0 20px;
+    }
+
+    > main {
+      flex: 1;
+      background-color: #eaeef3;
+    }
+  }
+}
